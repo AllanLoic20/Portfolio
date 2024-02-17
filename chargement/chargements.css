@@ -1,0 +1,132 @@
+body{
+    background-image: url(../Images/pexels-steve-johnson-12843338.jpg);
+}
+
+.charContent {
+
+    position: absolute;
+    width: 50px;
+    height: 50px;
+    top: 50%;
+    left: 50%;
+    -webkit-transition: all 1s;
+}
+
+.chargement {
+    
+    display:block;
+    width:100%;
+    height:100%;
+    border: 1px solid white;
+    transform-origin: 50% 50%;
+    transform:rotate(45deg);
+    -webkit-transform-origin: 50% 50%;
+    -webkit-transform:rotate(45deg);
+    -moz-transform-origin: 50% 50%;
+    -moz-transform:rotate(45deg);
+    -o-transform-origin: 50% 50%;
+    -o-transform:rotate(45deg);
+    -ms-transform-origin: 50% 50%;
+    -ms-transform:rotate(45deg);
+    color: white;
+
+}
+
+.charContent{
+
+     animation:anim 4s ease infinite;
+    -webkit-animation:anim 4s ease infinite;
+    -moz-animation:anim 4s ease infinite;
+    -o-animation:anim 4s ease infinite;
+    -ms-animation:anim 4s ease infinite;
+
+}
+@-webkit-keyframes anim{
+ 
+    from{
+            
+        -webkit-transform:rotateY(0deg);
+        transform:rotateY(0deg);
+    }
+
+    50% {
+    
+        -webkit-transform:rotateY(180deg);
+        transform:rotateY(180deg);
+    
+    }
+
+    to{
+        -webkit-transform:rotateY(360deg);
+        transform:rotateY(360deg);
+
+
+    }
+    
+}
+@-moz-keyframes anim{
+ 
+    from{
+            
+        -moz-transform:rotateY(0deg);
+        transform:rotateY(0deg);
+    }
+
+    50% {
+    
+        -moz-transform:rotateY(180deg);
+        transform:rotateY(180deg);
+    
+    }
+
+    to{
+        -moz-transform:rotateY(360deg);
+        transform:rotateY(360deg);
+
+
+    }
+    
+}
+@-ms-keyframes anim{
+ 
+    from{
+            
+        -ms-transform:rotateY(0deg);
+        transform:rotateY(0deg);
+    }
+
+    50% {
+    
+        -ms-transform:rotateY(180deg);
+        transform:rotateY(180deg);
+    
+    }
+
+    to{
+        -ms-transform:rotateY(360deg);
+        transform:rotateY(360deg);
+
+
+    }
+    
+}
+.charContent .chargement {
+    border: 1px solid #F1C40F;
+    color:  #F1C40F;
+}
+
+.chargement i {
+    color: #F1C40F;
+    -webkit-transform:rotate(-45deg);
+    -moz-transform:rotate(-45deg);
+    transform:rotate(-45deg);
+    text-align:center;
+    margin-top: 14px;
+    margin-left: 15px;
+}
+
+/* Chargement */
+
+.contenu-page {
+    display: none;
+}

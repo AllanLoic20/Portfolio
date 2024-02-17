@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="./Contact/Contact.css">
+    <link rel="stylesheet" href="./chargement/chargements.css">
+    <link rel="stylesheet" href="./fontawesome-free-5.15.3-web/css/all.min.css">
+    <title>Page d'acceuil de mon site</title>
+</head>
+
+<body>
+
+    <!--Chargement-->
+
+    <div class="charContent">
+        <div class="chargement">
+            <i class="far fa-grin-beam-sweat"></i>
+        </div>
+    </div>
+
+    <div class="contenu-page">
+                
+                <!-- Contenu de page -->
+
+        <!-- En tete de mon portfolio -->
+        <header>
+            <div class="en-tete">
+                <div class="header">
+                    <div class="logo">
+                        <h1 class="titre">.AllanLoïc</h1>
+                    </div>
+                    <div class="reseaux">
+                        <a href="#"><i class="fab fa-facebook"></i></a>
+                        <a href="#"><i class="fab fa-whatsapp"></i></a>
+                        <a href="#"><i class="fab fa-github"></i></a>
+                        <a href="#"><i class="fab fa-linkedin"></i></a>
+                    </div>
+                </div>
+            </div>
+            <div class="intro">
+                <h1 class="welcome">Bienvenue sur ma Page</h1>
+                <p class="presentation" id="presentation"></p>
+            </div>
+            <!-- <div class="button">
+                <a href="#" class="voir-plus"> VOIR PLUS </a>
+                <a href="#" class="CV"> TELECHARGER MON CV</a>
+            </div> -->
+        </header>
+
+                        <!--  C-->
+        
+                        <!--  Contact  -->
+
+        <div class="container">
+            <h2>Contacter - moi</h2>
+            <form action="./Contact/send_email.php" method="post">
+                <div class="form-group">
+                    <label for="name">Name:</label>
+                    <input type="text" id="name" name="name" required>
+                </div>
+                <div class="form-group">
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" name="email" required>
+                </div>
+                <div class="form-group">
+                    <label for="message">Message: </label>
+                    <textarea id="message" name="message" required></textarea>
+                </div>
+                <button type="submit">Submit</button>
+            </form>
+        </div>
+
+            <!-- footer -->
+
+        <footer>
+            <div class="footer">
+                <div class="remerciment">
+                    <h1 class="merci">Merci pour votre visite </h1>
+                </div>
+                <div class="createur"> 
+                    <p class="date">Site crée par &copy;AllanLoïc in 2024 </p>
+                </div>
+                <div class="reseaux">
+                    <a href="#"><i class="fab fa-facebook"></i></a>
+                    <a href="#"><i class="fab fa-whatsapp"></i></a>
+                    <a href="#"><i class="fab fa-github"></i></a>
+                    <a href="#"><i class="fab fa-linkedin"></i></a>
+                </div>
+            </div>
+        </footer>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
